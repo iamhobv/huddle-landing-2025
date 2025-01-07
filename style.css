@@ -8,7 +8,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+
+.logo {
+  height: 3em;
+  margin-bottom: 1em;
+}
+main {body {
   padding: 3em;
   background-color: var(--Violet);
   background-image: url(images/bg-desktop.svg);
@@ -17,11 +22,6 @@ body {
   background-repeat: no-repeat;
   color: white;
 }
-.logo {
-  height: 3em;
-  margin-bottom: 1em;
-}
-main {
   display: flex;
   flex-direction: row;
   gap: 2em;
@@ -86,6 +86,9 @@ i:hover {
 }
 
 @media screen and (max-width: 850px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+  }
   main {
     display: flex;
     flex-direction: column;
