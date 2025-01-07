@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 3em;
+  background-color: var(--Violet);
+  background-image: url(images/bg-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.logo {
+  height: 3em;
+  margin-bottom: 1em;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.col1 {
+  width: 55%;
+}
+.mockup {
+  width: 100%;
+}
+.col2 {
+  width: 45%;
+  margin-top: 2.5em;
+}
+.head {
+  font-family: "Poppins", serif;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+.content {
+  font-family: "Open Sans", serif;
+  font-size: larger;
+  line-height: 2rem;
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+button {
+  font-family: "Open Sans", serif;
+  padding: 20px;
+  padding-left: 55px;
+  padding-right: 55px;
+  border: 0;
+  border-radius: 25em;
+  font-size: medium;
+  color: var(--Violet);
+  box-shadow: 1px 1px 20px rgba(49, 49, 49, 0.548);
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  background-color: var(--SoftMagenta);
+}
+footer {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+}
+i {
+  border: 2px solid white;
+  /* width: 10px; */
+  /* height: 10px; */
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  font-size: large;
+  cursor: pointer;
+}
+i:hover {
+  border: 2px solid var(--SoftMagenta);
+  color: var(--SoftMagenta);
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .col1,
+  .col2 {
+    width: 100%;
+  }
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+}
