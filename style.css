@@ -8,12 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.logo {
-  height: 3em;
-  margin-bottom: 1em;
-}
-main {body {
+body {
   padding: 3em;
   background-color: var(--Violet);
   background-image: url(images/bg-desktop.svg);
@@ -22,6 +17,11 @@ main {body {
   background-repeat: no-repeat;
   color: white;
 }
+.logo {
+  height: 3em;
+  margin-bottom: 1em;
+}
+main {
   display: flex;
   flex-direction: row;
   gap: 2em;
@@ -110,3 +110,4 @@ i:hover {
     gap: 1em;
   }
 }
+/*comment*/
